@@ -11,12 +11,13 @@ function App() {
         <h3>{example.length} Birthday today</h3>
         {/* props for List */}
         <List example = {example}/>
-        <button onClick={() => console.log("Press me")}>
+        {/* Button to clear the Birthday list -> I can pass directly the useState function on the onclick event and set up an empty array*/}
+        <button onClick={() => myExample([])}>
           Clear information
         </button>
       </section>
     </main>
-  );
+  )
 }
 
 export default App;
